@@ -10,20 +10,21 @@ function Cutter() {
                 justify="center"
                 align="center"
                 mt={10}
+                c="white"
             >
-                <Grid justify='center' bg='rgba(0,0,0,.3)' pos={"sticky"}>
-                    <Grid.Col bg='blue' mb={24} pos={"sticky"}>
+                <Grid justify='center' pos={"sticky"}>
+                    <Grid.Col mb={24} pos={"sticky"}>
                         <Flex gap='md' justify={'center'} mb={17}>
-                            <Text size='sm' tt='uppercase' fw="bolder" ta='center' bg='red' pos={"relative"} >how it works</Text>
+                            <Text size='sm' tt='uppercase' fw="bolder" ta='center' pos={"relative"} >how it works</Text>
                             <Text size='sm' tt='uppercase' fw="bolder" ta='center' className="joi">joiner</Text>
                         </Flex>
                         <Text fz={45} fw={'bold'} align='center' pt={15}>Audio Cutter</Text>
                     </Grid.Col>
-                    <Grid.Col bg='yellow' align='center' mt={-25} pos={"sticky"}>
+                    <Grid.Col align='center' mt={-25} pos={"sticky"}>
                         <Text fz={21}>Free editor to trim and cut any audio file online</Text>
                     </Grid.Col>
-                    <Grid.Col bg='green' align='center' pt={35}>
-                        <Button variant="outline" radius={'xl'} color="purple" fz={'md'}>
+                    <Grid.Col align='center' pt={35}>
+                        <Button variant="outline" radius={'xl'} color="purple" fz={'md'} c='white'>
                             Browse my files
                         </Button>
                     </Grid.Col>
