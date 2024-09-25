@@ -2,14 +2,14 @@ import { Text, Flex, Grid, Button } from "@mantine/core";
 import { useViewportSize } from '@mantine/hooks';
 
 function Cutter() {
-    const { height, width } = useViewportSize();
+    const { height } = useViewportSize();
     return (
         <>
             <Flex
-                mih={height - 10}
+                mih={height}
                 justify="center"
-                align="center"
-                mt={10}
+                ta="center"
+                pt={240}
                 c="white"
             >
                 <Grid justify='center' pos={"sticky"}>
@@ -18,12 +18,12 @@ function Cutter() {
                             <Text size='sm' tt='uppercase' fw="bolder" ta='center' pos={"relative"} >how it works</Text>
                             <Text size='sm' tt='uppercase' fw="bolder" ta='center' className="joi">joiner</Text>
                         </Flex>
-                        <Text fz={45} fw={'bold'} align='center' pt={15}>Audio Cutter</Text>
+                        <Text fz={45} fw={'bold'} ta='center' pt={15}>Audio Cutter</Text>
                     </Grid.Col>
-                    <Grid.Col align='center' mt={-25} pos={"sticky"}>
+                    <Grid.Col ta='center' mt={-25} pos={"sticky"}>
                         <Text fz={21}>Free editor to trim and cut any audio file online</Text>
                     </Grid.Col>
-                    <Grid.Col align='center' pt={35}>
+                    <Grid.Col ta='center' pt={35}>
                         <Button variant="outline" radius={'xl'} color="purple" fz={'md'} c='white'>
                             Browse my files
                         </Button>

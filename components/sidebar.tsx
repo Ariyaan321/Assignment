@@ -2,10 +2,10 @@ import { Box, Text, Flex, ScrollArea } from '@mantine/core';
 import { useViewportSize } from '@mantine/hooks';
 
 export default function Sidebar() {
-    const { height, width } = useViewportSize();
+    const { height } = useViewportSize();
 
     return (
-        <Box component="div" h={height - 10} w={80} pt={30} align='center' pos={'absolute'} bg='rgba(0, 0, 0, 0.1)' c='grey'>
+        <Box component="div" h={height - 10} w={80} pt={30} ta='center' pos={'absolute'} bg='rgba(0, 0, 0, 0.1)' c='grey'>
             <Text size="sm">☰</Text>
             <ScrollArea
                 mt={60}
