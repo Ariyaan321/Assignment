@@ -2,7 +2,7 @@ import { Text, Flex, Grid, Button } from "@mantine/core";
 import { useViewportSize } from '@mantine/hooks';
 
 function Cutter() {
-    const { height, width } = useViewportSize();
+    const { height } = useViewportSize();
     return (
         <>
             <Flex
